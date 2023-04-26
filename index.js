@@ -1,7 +1,7 @@
 // popup menu
 var popupActif = null;
 
-function afficherPopup(titre, description, prix) {
+function afficherPopup(titre, description, prix, image) {
     if (popupActif !== null) {
         document.body.removeChild(popupActif);
         document.body.removeChild(popupActif.overlay);
@@ -11,7 +11,7 @@ function afficherPopup(titre, description, prix) {
 
     var popup = document.createElement("div");
     popup.className = "popup_menu";
-    popup.innerHTML = "<h1>" + titre + "</h1><h2>" + description + "</h2><p>" + prix + "</p><i class='fa-solid fa-xmark close_popup'></i>";
+    popup.innerHTML = "<h1>" + titre + "</h1><h2>" + description + "</h2><p>" + prix + "</p><i class='fa-solid fa-xmark close_popup'></i><img src='" + image + "'><p>";
     document.body.appendChild(popup);
     // popupActif = popup;
 
@@ -45,8 +45,9 @@ for (var i = 0; i < elements.length; i++) {
         var titre = this.closest(".menu_liste").querySelector(".menu_titre").textContent;
         var description = this.closest(".menu_liste").querySelector(".menu_description").textContent;
         var prix = this.closest(".menu_liste").querySelector(".menu_prix").textContent;
+        var image = this.closest(".menu_liste").querySelector(".menu_image").src;
         if (popupActif == null) {
-            afficherPopup(titre, description, prix);
+            afficherPopup(titre, description, prix, image);
         }
     });
 }
