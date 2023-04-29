@@ -365,6 +365,7 @@ header::-webkit-scrollbar-track {
     width: 40%;
     text-align: right;
     padding-inline: 5px 40px;
+    text-shadow: 2px 2px 2px var(--color-fonce);
 }
 
 .ouverture_tableau .ligne_ouverture_table p {
@@ -400,6 +401,7 @@ header::-webkit-scrollbar-track {
     text-align: center;
     padding-inline: 5px;
     font-size: 20px;
+    text-shadow: 2px 2px 2px var(--color-fonce);
 }
 
 .evenements .ligne_evenements p {
@@ -427,6 +429,9 @@ header::-webkit-scrollbar-track {
     flex-shrink: 0;
     padding: 150px 0;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     color: var(--color-blanc);
     font-size: 45px;
