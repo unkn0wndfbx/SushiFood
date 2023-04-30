@@ -387,7 +387,7 @@ header::-webkit-scrollbar-track {
 
 .ligne .evenements .ligne_evenements {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
     padding: 30px 0;
@@ -427,14 +427,14 @@ header::-webkit-scrollbar-track {
 .slider_container p {
     background: var(--color-fonce);
     flex-shrink: 0;
-    padding: 150px 0;
+    padding: 10% 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: var(--color-blanc);
-    font-size: 45px;
+    font-size: clamp(30px, 3vw, 45px);
 }
 
 @keyframes sliderImages {
