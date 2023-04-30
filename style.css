@@ -1,3 +1,4 @@
+/* importation police Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 /* variables de couleur */
@@ -713,7 +714,6 @@ header::-webkit-scrollbar-track {
     }
 }
 
-
 .popup_menu h1 {
     color: var(--color-principale);
     text-transform: uppercase;
@@ -765,7 +765,7 @@ header::-webkit-scrollbar-track {
     z-index: 8888;
 }
 
-/* media querie responsive */
+/* media queries pour responsivite */
 @media screen and (min-width: 1750px) {
     .navbar_reserver {
         width: 6%;
@@ -827,6 +827,7 @@ header::-webkit-scrollbar-track {
 }
 
 @media screen and (max-width: 900px) {
+    /* ascenseur page */
     body {
         overflow-y: auto;
     }
@@ -860,7 +861,7 @@ header::-webkit-scrollbar-track {
         margin: 13% 0;
     }
     .nav_links li i, .nav_links li a {
-        font-size: 30px;
+        font-size: clamp(25px, 3vw, 30px);
     }
     .nav_links li a:after {
         height: 4px;
@@ -871,7 +872,7 @@ header::-webkit-scrollbar-track {
     }
     .navbar_reserver a {
         padding: 0 5px;
-        font-size: 30px;
+        font-size: clamp(25px, 3vw, 30px);
         padding: 10px 20px;
         width: auto;
     }
@@ -998,9 +999,11 @@ header::-webkit-scrollbar-track {
 }
 
 @media screen and (max-width: 340px) {
+    /* header responsive */
     .header_responsive {
         padding-left: 10%;
     }
+    /* accueil */
     .ligne {
         margin-bottom: 50px;
     }

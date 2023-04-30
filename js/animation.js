@@ -2,7 +2,7 @@ const slideTitre = document.querySelector('.anim_scroll');
 const slideTitreReverse = document.querySelector('.anim_scroll_reverse');
 const sliderMenu = document.querySelector('.menu');
 
-//titre 1
+// fonction : afficher titre 1 au scroll
 window.addEventListener('scroll', () => {
     const {scrollTop, clientHeight} = document.documentElement;
 
@@ -13,7 +13,7 @@ window.addEventListener('scroll', () => {
     }
 })
 
-//titre 2
+// fonction : afficher titre 2 au scroll
 window.addEventListener('scroll', () => {
     const {scrollTop, clientHeight} = document.documentElement;
 
@@ -24,7 +24,7 @@ window.addEventListener('scroll', () => {
     }
 })
 
-//menu
+// fonction : afficher menu au scroll
 window.addEventListener('scroll', () => {
     const {scrollTop, clientHeight} = document.documentElement;
 
